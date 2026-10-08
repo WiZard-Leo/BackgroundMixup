@@ -1,0 +1,10 @@
+{
+  "output/mr_detr_align_r50_12ep/model_final.pth": {
+    "sha256": "3750f1788ccd8c798b3a3000c034fa51f2d3138b7125230f3773595b474489c7",
+    "bytes": 649573496
+  },
+  "output/mr_detr_align_r50_12ep_bgm/model_final.pth": {
+    "sha256": "9d5c9d3958e98aa64a32268c22b5628c304336a2aef5c16a92c6239932341a9e",
+    "bytes": 649573496
+  }
+}

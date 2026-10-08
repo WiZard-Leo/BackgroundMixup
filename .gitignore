@@ -1,0 +1,157 @@
+# GitHub contains source code and release documentation.
+# Weights and large evaluation artifacts are distributed separately on Hugging Face.
+
+# Model checkpoints, prediction caches and compiled model exports
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.safetensors
+*.onnx
+events.out.tfevents.*
+
+# Local experiment outputs, logs, metrics and checkpoints
+/output/
+
+# Datasets, fresh evaluations and local experiment tracking
+/datasets/
+/evaluations/
+/outputs/
+/work_dirs/
+wandb/
+wandb_output/
+
+# Local publishing staging directories
+/hf-release/
+/release_staging/
+
+# Generated detrex installation files
+detrex/config/configs
+detrex/version.py
+
+# Python caches and native extensions
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+*.dll
+.Python
+
+# Environments and local credentials
+.env
+.env.*
+!.env.example
+!.env.template
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+/.aws/
+
+# Build and packaging artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+
+# Test, lint and documentation caches
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+docs/_build/
+/site/
+.ipynb_checkpoints/
+__pypackages__/
+
+# Local logs and job scripts
+*.log
+out.txt
+err.txt
+*out.txt
+*err.txt
+pip-log.txt
+pip-delete-this-directory.txt
+train_slurm.sh
+train_slurm_msdetr.sh
+train_slurm_one2oneloss.sh
+
+# Editor and operating system files
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+.DS_Store
+._*
+__MACOSX/
+*.swp
+*.swo
+*~
+
+# Upstream examples, documentation and development-only material
+/assets/
+/demo/
+/docs/
+/dev/
+/tests/
+/tools/
+/.readthedocs.yaml
+/.clang-format
+/.flake8
+/README.MrDETR.upstream.md
+/utils.py
+
+# Unused Mr. DETR variants and checkpoint conversion utilities
+/projects/mr_detr_deformable/
+/projects/mr_detr_deformable_ins_seg/
+/projects/mr_detr_dino/
+/projects/mr_detr_pp_align/
+/projects/mr_detr_align/assets/
+/projects/mr_detr_align/converter.py
+/projects/mr_detr_align/convert_two_stage.py
+
+# Bundled Detectron2: retain library, projects, model-zoo configs and licenses.
+# Examples, documentation, CI and development tools are not needed for evaluation.
+/detectron2/.github/
+/detectron2/.clang-format
+/detectron2/.flake8
+/detectron2/demo/
+/detectron2/docs/
+/detectron2/dev/
+/detectron2/docker/
+/detectron2/tests/
+/detectron2/tools/
+/detectron2/datasets/
