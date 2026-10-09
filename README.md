@@ -1,14 +1,19 @@
 # [TIFS 2026] BGM: Background Mixup for X-Ray Prohibited Items Detection
 
+[arXiv](https://arxiv.org/abs/2412.00460) | [IEEE TIFS](https://doi.org/10.1109/TIFS.2026.3734779) | [Hugging Face](https://huggingface.co/leowizard/background-mixup)
+
 Implementation of BGM, Background Mixup for X-Ray Prohibited Items Detection.
 
+[![BGM overview](assets/overview_v13.png)](assets/overview_v13.pdf)
 
 ## Checkpoints
 
+Checkpoints are hosted at [leowizard/background-mixup](https://huggingface.co/leowizard/background-mixup) (private; authorized access required).
+
 | Model | Dataset | Download |
 | --- | --- | --- |
-| Baseline | PIDray | HF Hub (coming soon) |
-| BGM | PIDray | HF Hub (coming soon) |
+| Baseline | PIDray | [HF Hub](https://huggingface.co/leowizard/background-mixup/blob/main/output/mr_detr_align_r50_12ep/model_final.pth) |
+| BGM | PIDray | [HF Hub](https://huggingface.co/leowizard/background-mixup/blob/main/output/mr_detr_align_r50_12ep_bgm/model_final.pth) |
 
 Place each checkpoint as `model_final.pth` in `output/mr_detr_align_r50_12ep/` (Baseline) or `output/mr_detr_align_r50_12ep_bgm/` (BGM).
 

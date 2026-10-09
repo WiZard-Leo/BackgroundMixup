@@ -122,7 +122,9 @@ __MACOSX/
 *~
 
 # Upstream examples, documentation and development-only material
-/assets/
+/assets/*
+!/assets/overview_v13.pdf
+!/assets/overview_v13.png
 /demo/
 /docs/
 /dev/
